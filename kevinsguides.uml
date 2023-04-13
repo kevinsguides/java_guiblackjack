@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.kevinsguides</OriginalElement>
+  <nodes>
+    <node x="-254.01958817790023" y="1832.1228070175437">com.kevinsguides.Main</node>
+    <node x="-1013.8086808625594" y="2139.9655172413786">com.kevinsguides.Suit</node>
+    <node x="-251.51958817790023" y="1940.0">com.kevinsguides.Game</node>
+    <node x="-813.4247408881022" y="1821.1228070175437">com.kevinsguides.Card</node>
+    <node x="-35.18303726586686" y="2151.877192982456">com.kevinsguides.Player</node>
+    <node x="-813.4247408881022" y="2084.7688378033195">com.kevinsguides.Rank</node>
+    <node x="-560.4721645330012" y="1914.195362778806">com.kevinsguides.Hand</node>
+    <node x="-40.68303726586686" y="1832.1228070175437">com.kevinsguides.Person</node>
+    <node x="-553.3561390899335" y="1495.9259259259256">com.kevinsguides.Deck</node>
+    <node x="-35.18303726586686" y="2039.5">com.kevinsguides.Dealer</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.kevinsguides.Game" target="com.kevinsguides.Player" relationship="TO_ONE">
+      <point x="72.0" y="93.87699999999995" />
+      <point x="-107.5" y="-30.000192982456156" />
+    </edge>
+    <edge source="com.kevinsguides.Hand" target="com.kevinsguides.Card" relationship="TO_MANY">
+      <point x="4.5838037988232827E-4" y="-117.00036277880622" />
+      <point x="-452.9717061526213" y="1886.0" />
+      <point x="-463.5" y="1886.0" />
+      <point x="-463.5" y="1866.5" />
+      <point x="79.49974088810222" y="-49.622807017543664" />
+    </edge>
+    <edge source="com.kevinsguides.Player" target="com.kevinsguides.Deck" relationship="DEPENDENCY">
+      <point x="-107.49996273413313" y="-1.929824561557325E-4" />
+      <point x="-72.0" y="2202.877" />
+      <point x="-72.0" y="1668.426" />
+      <point x="117.50013908993355" y="7.407407429127488E-5" />
+    </edge>
+    <edge source="com.kevinsguides.Deck" target="com.kevinsguides.Suit" relationship="DEPENDENCY">
+      <point x="-117.49986091006645" y="7.407407429127488E-5" />
+      <point x="-837.0" y="1668.426" />
+      <point x="-837.0" y="2256.966" />
+      <point x="76.49968086255944" y="4.827586212741153E-4" />
+    </edge>
+    <edge source="com.kevinsguides.Player" target="com.kevinsguides.Person" relationship="GENERALIZATION">
+      <point x="3.726586685104394E-5" y="-51.000192982456156" />
+      <point x="72.317" y="2136.0" />
+      <point x="146.817" y="2136.0" />
+      <point x="146.817" y="1916.123" />
+      <point x="85.00003726586687" y="1.9298245638310618E-4" />
+    </edge>
+    <edge source="com.kevinsguides.Card" target="com.kevinsguides.Rank" relationship="DEPENDENCY">
+      <point x="-2.591118977761653E-4" y="95.00019298245638" />
+      <point x="-2.591118977761653E-4" y="-237.99983780331968" />
+    </edge>
+    <edge source="com.kevinsguides.Hand" target="com.kevinsguides.Card" relationship="DEPENDENCY">
+      <point x="-107.5" y="-109.5" />
+      <point x="-614.008599634241" y="1921.695362778806" />
+      <point x="-614.008599634241" y="1936.6953627788062" />
+      <point x="79.5" y="20.572555761262493" />
+    </edge>
+    <edge source="com.kevinsguides.Main" target="com.kevinsguides.Game" relationship="CREATE">
+      <point x="0.0" y="39.5" />
+      <point x="0.0" y="-139.0" />
+    </edge>
+    <edge source="com.kevinsguides.Player" target="com.kevinsguides.Hand" relationship="DEPENDENCY">
+      <point x="3.726586685104394E-5" y="50.999807017543844" />
+      <point x="72.317" y="2279.5" />
+      <point x="-327.5" y="2279.5" />
+      <point x="-327.5" y="2260.0" />
+      <point x="-467.9717061526213" y="2260.0" />
+      <point x="-14.999541619620118" y="116.999637221194" />
+    </edge>
+    <edge source="com.kevinsguides.Card" target="com.kevinsguides.Rank" relationship="TO_ONE">
+      <point x="-15.000259111897776" y="95.0" />
+      <point x="-15.000259111897776" y="-238.0" />
+    </edge>
+    <edge source="com.kevinsguides.Game" target="com.kevinsguides.Deck" relationship="CREATE">
+      <point x="-72.0" y="-15.0" />
+      <point x="-285.85613908993355" y="2064.0" />
+      <point x="-285.85613908993355" y="1839.6228070175437" />
+      <point x="117.5" y="171.19688109161802" />
+    </edge>
+    <edge source="com.kevinsguides.Dealer" target="com.kevinsguides.Person" relationship="GENERALIZATION">
+      <point x="3.7265866858149366E-5" y="39.5" />
+      <point x="44.317" y="2136.0" />
+      <point x="146.817" y="2136.0" />
+      <point x="146.817" y="1916.123" />
+      <point x="85.00003726586687" y="1.9298245638310618E-4" />
+    </edge>
+    <edge source="com.kevinsguides.Game" target="com.kevinsguides.Dealer" relationship="TO_ONE">
+      <point x="72.0" y="30.0" />
+      <point x="-79.5" y="30.0" />
+    </edge>
+    <edge source="com.kevinsguides.Person" target="com.kevinsguides.Hand" relationship="TO_ONE">
+      <point x="85.0" y="-14.999807017543617" />
+      <point x="212.317" y="1901.123" />
+      <point x="212.317" y="2294.5" />
+      <point x="-482.9717061526213" y="2294.5" />
+      <point x="-29.999541619620118" y="117.0" />
+    </edge>
+    <edge source="com.kevinsguides.Game" target="com.kevinsguides.Player" relationship="CREATE">
+      <point x="72.0" y="108.87699999999995" />
+      <point x="-107.5" y="-15.000192982456156" />
+    </edge>
+    <edge source="com.kevinsguides.Person" target="com.kevinsguides.Deck" relationship="DEPENDENCY">
+      <point x="-84.99996273413313" y="1.9298245638310618E-4" />
+      <point x="-72.0" y="1916.123" />
+      <point x="-72.0" y="1668.426" />
+      <point x="117.50013908993355" y="7.407407429127488E-5" />
+    </edge>
+    <edge source="com.kevinsguides.Deck" target="com.kevinsguides.Card" relationship="TO_MANY">
+      <point x="1.3908993355471466E-4" y="172.5000740740743" />
+      <point x="-435.856" y="1886.0" />
+      <point x="-463.5" y="1886.0" />
+      <point x="-463.5" y="1866.5" />
+      <point x="79.49974088810222" y="-49.622807017543664" />
+    </edge>
+    <edge source="com.kevinsguides.Card" target="com.kevinsguides.Suit" relationship="DEPENDENCY">
+      <point x="-79.50025911189778" y="1.9298245638310618E-4" />
+      <point x="-837.0" y="1916.123" />
+      <point x="-837.0" y="2256.966" />
+      <point x="76.49968086255944" y="4.827586212741153E-4" />
+    </edge>
+    <edge source="com.kevinsguides.Dealer" target="com.kevinsguides.Hand" relationship="DEPENDENCY">
+      <point x="79.50003726586685" y="0.0" />
+      <point x="197.317" y="2079.0" />
+      <point x="197.317" y="2279.5" />
+      <point x="-327.5" y="2279.5" />
+      <point x="-327.5" y="2260.0" />
+      <point x="-467.9717061526213" y="2260.0" />
+      <point x="-14.999541619620118" y="116.999637221194" />
+    </edge>
+    <edge source="com.kevinsguides.Game" target="com.kevinsguides.Hand" relationship="GENERALIZATION">
+      <point x="-72.0" y="15.0" />
+      <point x="-305.05602327914005" y="2094.0" />
+      <point x="-305.05602327914005" y="2079.0" />
+      <point x="107.5" y="47.80463722119384" />
+    </edge>
+    <edge source="com.kevinsguides.Hand" target="com.kevinsguides.Deck" relationship="DEPENDENCY">
+      <point x="4.5838037988232827E-4" y="116.999637221194" />
+      <point x="-452.9717061526213" y="2235.5" />
+      <point x="-72.0" y="2235.5" />
+      <point x="-72.0" y="1668.426" />
+      <point x="117.50013908993355" y="7.407407429127488E-5" />
+    </edge>
+    <edge source="com.kevinsguides.Deck" target="com.kevinsguides.Rank" relationship="DEPENDENCY">
+      <point x="-117.49986091006645" y="160.1970740740744" />
+      <point x="-636.925" y="1828.623" />
+      <point x="-636.925" y="2048.0" />
+      <point x="-733.925" y="2048.0" />
+      <point x="-2.591118977761653E-4" y="-237.99983780331968" />
+    </edge>
+    <edge source="com.kevinsguides.Person" target="com.kevinsguides.Game" relationship="DEPENDENCY">
+      <point x="-85.0" y="31.377192982456336" />
+      <point x="72.0" y="-131.5" />
+    </edge>
+    <edge source="com.kevinsguides.Game" target="com.kevinsguides.Person" relationship="DEPENDENCY">
+      <point x="72.0" y="-116.5" />
+      <point x="-85.0" y="46.377192982456336" />
+    </edge>
+    <edge source="com.kevinsguides.Game" target="com.kevinsguides.Dealer" relationship="CREATE">
+      <point x="72.0" y="15.0" />
+      <point x="-79.5" y="15.0" />
+    </edge>
+    <edge source="com.kevinsguides.Card" target="com.kevinsguides.Suit" relationship="TO_ONE">
+      <point x="-79.5" y="-14.999807017543617" />
+      <point x="-937.3086808625594" y="1901.123" />
+      <point x="0.0" y="-117.0" />
+    </edge>
+    <edge source="com.kevinsguides.Game" target="com.kevinsguides.Deck" relationship="TO_ONE">
+      <point x="-72.0" y="0.0" />
+      <point x="-327.5" y="2079.0" />
+      <point x="108.35613908993355" y="172.5" />
+    </edge>
+    <edge source="com.kevinsguides.Deck" target="com.kevinsguides.Card" relationship="CREATE">
+      <point x="-117.5" y="15.000074074074291" />
+      <point x="-733.9247408881022" y="1683.426" />
+      <point x="0.0" y="-95.0" />
+    </edge>
+    <edge source="com.kevinsguides.Person" target="com.kevinsguides.Hand" relationship="CREATE">
+      <point x="85.0" y="-29.999807017543617" />
+      <point x="227.317" y="1886.123" />
+      <point x="227.317" y="2309.5" />
+      <point x="-497.9717061526213" y="2309.5" />
+      <point x="-44.99954161962012" y="117.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.7843296327924851" showDependencies="true" x="-229.7636222810329" y="2026.9907082976952" />
+  <SelectedNodes>
+    <node>com.kevinsguides.Hand</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
