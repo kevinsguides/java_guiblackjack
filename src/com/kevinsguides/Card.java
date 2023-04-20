@@ -2,7 +2,7 @@ package com.kevinsguides;
 
 /**
  * The Card class allows us to create cards with a Suit and a Rank
- * It contains the methods needed to get the value of the card,
+ * It contains the methods needed to get the value of the card
  * and it contains a method to print the card to the console
  */
 public class Card implements Comparable<Card>{
@@ -60,9 +60,8 @@ public class Card implements Comparable<Card>{
 
     /**
      * Compare a card to another card, returning 1 if this is higher, -1 if this is lower, in case we want to sort cards
-     * I didn't talk about this in the tutorial, but left it here, so you can see how it works
-     * @param c the card being compared
-     * @return 1 if greater, -1 if less, 0 if equal
+     * @param c
+     * @return
      */
     @Override
     public int compareTo(Card c) {

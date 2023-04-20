@@ -1,8 +1,6 @@
 package com.kevinsguides;
 
-
 import java.util.ArrayList;
-
 
 /**
  * A hand of cards to play with
@@ -46,14 +44,10 @@ public class Hand {
      * @return The hand with all its cards in a single line String
      */
     public String toString(){
-        //the String we're formatting for output
         String output = "";
-        //for each card in the hand
         for(Card card: hand){
-            //add the String version of the card to the output string
             output += card + " - ";
         }
-        //return the formatted string
         return output;
     }
 
@@ -99,10 +93,12 @@ public class Hand {
         return hand.get(idx);
     }
 
+    /**
+     * Get the number of cards in this hand
+     * @return
+     */
     public int getHandSize(){
         return hand.size();
     }
-
-
 
 }
