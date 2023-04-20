@@ -22,7 +22,7 @@ public class Game extends JPanel {
     //These constants define the width and height of the card images on the screen
     public static final int CARD_WIDTH = 100;
     public static final int CARD_HEIGHT = 145;
-
+    public static final String IMAGE_DIR="img/cards/";
     //These variables reference GUI elements
     JButton btnHit, btnStand, btnNext;
     JLabel lblDealerCards[], lblPlayerCards[], lblScore, lblPlayerHandVal, lblDealerHandVal, lblGameMessage;
@@ -31,7 +31,7 @@ public class Game extends JPanel {
      * Constructor for Game, creates our variables and starts the Game
      */
     public Game() {
-
+        
         //Create a new deck with 52 cards
         deck = new Deck(true);
         //Create a new empty deck
@@ -75,7 +75,6 @@ public class Game extends JPanel {
 
         //When someone clicks the Hit button
         btnHit.addActionListener(new ActionListener() {
-
             @Override
             public void actionPerformed(ActionEvent e) {
                 //make the player hit the deck
@@ -84,7 +83,6 @@ public class Game extends JPanel {
                 updateScreen();
                 //check if they busted
                 checkBusts();
-
             }
         });
 
@@ -138,8 +136,8 @@ public class Game extends JPanel {
 
             //set them to new cards face down
             //done with JLabels and ImageIcons
-            lblDealerCards[i] = new JLabel(new ImageIcon(new ImageIcon(Main.IMAGE_DIR+"CardDown.png").getImage().getScaledInstance(CARD_WIDTH, CARD_HEIGHT, Image.SCALE_DEFAULT)));
-            lblPlayerCards[i] = new JLabel(new ImageIcon(new ImageIcon(Main.IMAGE_DIR+"CardDown.png").getImage().getScaledInstance(CARD_WIDTH, CARD_HEIGHT, Image.SCALE_DEFAULT)));
+            lblDealerCards[i] = new JLabel(new ImageIcon(new ImageIcon(IMAGE_DIR+"CardDown.png").getImage().getScaledInstance(CARD_WIDTH, CARD_HEIGHT, Image.SCALE_DEFAULT)));
+            lblPlayerCards[i] = new JLabel(new ImageIcon(new ImageIcon(IMAGE_DIR+"CardDown.png").getImage().getScaledInstance(CARD_WIDTH, CARD_HEIGHT, Image.SCALE_DEFAULT)));
 
             //Use setBounds to set the width/height of each card, and their positions
             lblDealerCards[i].setBounds(initialCardX, initialCardY, CARD_WIDTH, CARD_HEIGHT);

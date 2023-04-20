@@ -53,7 +53,7 @@ public abstract class Person {
             String rank = this.hand.getCard(i).getRank().toString();
             String suit = this.hand.getCard(i).getSuit().toString();
             String filename = rank + suit + ".png";
-            cardPics[i].setIcon(new ImageIcon(new ImageIcon(Main.IMAGE_DIR+filename).getImage().getScaledInstance(Game.CARD_WIDTH, Game.CARD_HEIGHT, Image.SCALE_DEFAULT)));
+            cardPics[i].setIcon(new ImageIcon(new ImageIcon(Game.IMAGE_DIR+filename).getImage().getScaledInstance(Game.CARD_WIDTH, Game.CARD_HEIGHT, Image.SCALE_DEFAULT)));
             cardPics[i].setVisible(true);
         }
 

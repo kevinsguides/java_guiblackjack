@@ -40,7 +40,8 @@ public class Main {
     It may be different depending on your IDE/settings.
     IF CARD IMAGES DON'T LOAD, YOU PROBABLY NEED TO CHANGE THIS
      */
-    static final String IMAGE_DIR="src/com/kevinsguides/img/cards/";
+    
+
 
 
     public static void main(String[] args) {
@@ -61,8 +62,6 @@ public class Main {
 
         //make the game visible
         frame.setVisible(true);
-
-
 
     }
 }
